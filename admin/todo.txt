@@ -1,0 +1,22 @@
+[-] phase 1 - without multiple choice
+    [-] come up with first 20 - 25 questions
+    - 100% unit test coverage
+    [] next question button - allow repetition
+    [] buy ngquiz.com and angularquiz.com
+    [] click to change question - cannot be the same question
+    [] display code if present
+    [] deploy v1 to cloud
+[] phase 1.5 - consolidation
+    [] add in cypress e2e tests
+[] phase 2 - timed multiple choice with score
+    [] single choice
+    [] multi-choice
+    [] show category meta-data per question - show all options, highlight them per question
+[] phase 2.5 - consolidation
+    [] disallow question repetition
+    [] handle running out of questions
+    [] add my github link to the site
+[] backlog
+    [] dockerise
+    [] make into PWA
+    [] pwaquiz.com
