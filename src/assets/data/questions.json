@@ -1,0 +1,202 @@
+{
+  "questions": [
+    {
+      "question": "What is the syntax for binding to an input in a template",
+      "answer": "[] - square braces",
+      "example": "<app-my-component [myInput]=\"my input value\">",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "What is the syntax for binding to an output in a template",
+      "answer": "() - round braces",
+      "example": "<app-my-component (myOutput)=\"outputHandler()\">",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "In CSS, what does @import do?",
+      "answer": "It is a way to pull the contents of another css file into your css file. Note that you cannot load an @Import until the file declaring the import has been loaded.",
+      "categories": [
+        "css"
+      ]
+    },
+    {
+      "question": "List some different ways of adding css to your project",
+      "answer": "1. add to angular.json - this adds your css to your javascript\n2. add a standard css link in the head of your document (eg <link rel=\"stylesheet\" type=\"text/css\" href=\"theme.css\">)\n3. use @import within another stylesheet\n4. create a local css file for your component and point your component to it\n5. add to the default styles.css (this is automatically created by the cli)",
+      "categories": [
+        "angular, css"
+      ]
+    },
+    {
+      "question": "What are the different ways to encapsulate your component. Which is the default?",
+      "answer": "None, Emulated, Native. The default is Emulated",
+      "categories": [
+        "angular, css"
+      ]
+    },
+    {
+      "question": "What is Angular Material?",
+      "answer": "This is a set of front-end components for Angular, designed as an implementation of Google's Material Design Specification",
+      "categories": [
+        "angular, css"
+      ]
+    },
+    {
+      "question": "In Shadow DOM terminology, what is the Shadow host",
+      "answer": "The regular DOM node that the shadow DOM is attached to",
+      "categories": [
+        "web components, html"
+      ]
+    },
+    {
+      "question": "In Shadow DOM terminology, what is the Shadow tree",
+      "answer": "The DOM tree inside the shadow DOM",
+      "categories": [
+        "web components, html"
+      ]
+    },
+    {
+      "question": "In Shadow DOM terminology, what is the Shadow boundary",
+      "answer": "The place where the shadow DOM ends, and the regular DOM begins",
+      "categories": [
+        "web components, html"
+      ]
+    },
+    {
+      "question": "In Shadow DOM terminology, what is the Shadow root",
+      "answer": "The root node of the shadow tree",
+      "categories": [
+        "web components, html"
+      ]
+    },
+    {
+      "question": "When Angular uses Emulated view encapsulation, how does it emulate the shadow DOM?",
+      "answer": "Emulates native scoping of styles by adding an attribute containing surrogate id to the Host Element and pre-processing the style rules provided via styles or styleUrls, and adding the new Host Element attribute to all selectors",
+      "categories": [
+        "angular, html"
+      ]
+    },
+    {
+      "question": "What is the difference between and attribute directive and a structural directive?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "What do square brackets around a directive selector denote",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "Can you put more than 1 directive on the same element?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "What is the syntax for conditionally adding a class to an element using [ngClass]?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "How would you get a reference to the element in an attribute directive",
+      "answer": "You should inject ElementRef inside the constructor. To access the HTMLDivElement, use this.elementRef.nativeElement",
+      "example": "export class MyAttributeDirective {\n    @Input('directiveBinding') varFromComponent;\n\n    constructor(private elementRef: ElementRef) {}\n}",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "Can you apply an attribute directive to an angular component?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "Does *ngIf remove from the DOM or just hide with display: none?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "Under what circumstances would is be bad practice to manipulate DOM elements using ElementRef? How do you make changes to these elements?",
+      "answer": "If using service workers you don't have access to the DOM. Make changes on a Renderer2 reference instead which decouples the thing you are making changes to from ElementRef",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "In a directive, what does the hostlistener annotation do?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "In a directive, what does the hostbinding annotation do?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    },
+    {
+      "question": "If you're running an Angular application in dev mode, open dev tools, select the app route then type ng.probe($0) in the dev tools console. What would you expect to see?",
+      "answer": "This will show a json representation of the root component",
+      "example": "AppComponent {title: \"angular-quiz\", index: 4}\nindex: 4\ntitle: \"angular-quiz\"\nanswer: (...)\nquestion: (...)",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "How do you set an alias for an input binding?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "How do you pass an input property to an attribute directive?",
+      "answer": "",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What does the * at the start of a directive mean?",
+      "answer": "This denotes a structural directive. ",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What are the 3 types of angular directive",
+      "answer": "1. component - a directive with a template. 2. structural directive - change the DOM by adding and removing DOM elements. 3. attribute directive - change the appearance or behaviour of an element or directive",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is the Angular Testbed?",
+      "answer": "This is a way of creating a type of Angular module specifically for testing. This enables the dependency injection to work, and provides a DOM to render your component into",
+      "example": "beforeEach(async(() => {\n    TestBed.configureTestingModule({\n      declarations: [ HomePage ],\n    }).compileComponents();\n  }));\n\n  beforeEach(() => {\n    fixture = TestBed.createComponent(HomePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  });",
+      "categories": [
+        "angular"
+      ]
+    }
+  ]
+}
