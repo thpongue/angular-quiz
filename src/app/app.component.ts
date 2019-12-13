@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import * as data from '../assets/data/questions.json';
+import {QuestionModel} from './question.model';
+import {QuestionService} from './question.service';
 
 @Component({
   selector: 'app-root',
@@ -7,18 +8,12 @@ import * as data from '../assets/data/questions.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  index: number;
   title: string = 'angular-quiz';
+  randomQuestion: QuestionModel;
+
+  constructor(private questionService: QuestionService) {}
 
   ngOnInit() {
-    this.index = Math.floor(data.questions.length * Math.random());
-  }
-
-  get question(): any {
-    return data.questions[this.index].question;
-  }
-
-  get answer(): any {
-    return data.questions[this.index].answer;
+    this.randomQuestion = this.questionService.getRandomQuestion();
   }
 }

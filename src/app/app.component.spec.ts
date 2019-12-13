@@ -1,12 +1,29 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {QuestionService} from './question.service';
+import {MockComponent} from 'ng-mocks';
+import {QuestionComponent} from './question/question.component';
 
 describe('AppComponent', () => {
+
+  // let mockQuestionService: Partial<QuestionService>;
+  // beforeEach(() => {
+  //   mockQuestionService = {};
+  //   mockQuestionService.getRandomQuestion = jasmine.createSpy().and.returnValue(null);
+  // });
+
+  let mockQuestionService: QuestionService;
+  beforeEach(() => {
+    mockQuestionService = jasmine.createSpyObj(['getRandomQuestion']);
+  });
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        MockComponent(QuestionComponent)
       ],
+      providers: [{provide: QuestionService, useValue: mockQuestionService}]
     }).compileComponents();
   }));
 

@@ -1,5 +1,5 @@
 [-] phase 1 - without multiple choice
-    [-] come up with first 20 - 25 questions
+    [-] come up with first batch of questions
     - 100% unit test coverage
     [] next question button - allow repetition
     [] buy ngquiz.com and angularquiz.com
