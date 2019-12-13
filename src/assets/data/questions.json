@@ -32,7 +32,7 @@
     },
     {
       "question": "What are the different ways to encapsulate your component. Which is the default?",
-      "answer": "None, Emulated, Native. The default is Emulated",
+      "answer": "None, Emulated, Native, ShadowDom. The default is Emulated",
       "categories": [
         "angular, css"
       ]
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "question": "What do square brackets around a directive selector denote",
+      "question": "Within a component annotation, what do square brackets around a directive selector denote",
       "answer": "",
       "categories": [
         "angular"
@@ -194,6 +194,123 @@
       "question": "What is the Angular Testbed?",
       "answer": "This is a way of creating a type of Angular module specifically for testing. This enables the dependency injection to work, and provides a DOM to render your component into",
       "example": "beforeEach(async(() => {\n    TestBed.configureTestingModule({\n      declarations: [ HomePage ],\n    }).compileComponents();\n  }));\n\n  beforeEach(() => {\n    fixture = TestBed.createComponent(HomePage);\n    component = fixture.componentInstance;\n    fixture.detectChanges();\n  });",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "If Services have to be declared in the providers array (to enable hierarchical injection) how can they be lazy loaded?",
+      "answer": "Using the @Injectable annotation (Angular 6+)",
+      "example": "@Injectable({providedIn: 'root'})\nexport class MyService...",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "If you add the @Injectable() annotation to a service does it mean that you can inject the service into another, or that another service can be injected into it",
+      "answer": "Another service can be injected into it - note that the term i 'injectable' is misleading",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "If you find a Service with the @Injectable() annotation and update it with the following parameter: {providedIn: 'root'} what does that do?",
+      "answer": "It is an alternative to adding the service to the providers in the root module. Detractors point out that it harms the cohesion of your software as providers can be scattered throughout the app. However, if only used in a lazy-loaded module it will be tree shaken out of the main module. Also if it isn't used at all this format allows the service to be tree shaken out of the build",
+      "example": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "In Jasmine, What is the main difference between createSpy and spyOn?",
+      "answer": "createSpy creates the method, spyOn turns an existing method into a spy",
+      "categories": [
+        "testing"
+      ]
+    }, {
+      "question": "Which Angular object has the forRoot method?",
+      "answer": "RouterModule",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "If you have correctly set up your routing and try to navigate using <a href='/myValidPath' what would happen",
+      "answer": "It will hit the server and reload the whole app",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're currently on the path /yada and you click a link containing the routerLink=\"yada\". Where does this attempt to link to",
+      "answer": "/yada/yada - its a relative path",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're currently on the path /yada and you click a link containing the routerLink=\"./yada\". Where does this attempt to link to",
+      "answer": "/yada/yada - its a relative path",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're currently on the path /yada and you click a link containing the routerLink=\"../yada\". Where does this attempt to link to",
+      "answer": "/yada - this is a relative path which tells us to go back from /yada to / then appends yada",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're currently on the path /yada and you click a link containing the routerLink=\"/yada\". Where does this attempt to link to",
+      "answer": "/yada - this is an absolute path",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "What does routerLinkActive do?",
+      "answer": "It takes a string specifying the name of a class (or classes) to be added when that routerLink is active",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're currently on the route <your host>/blah. What route would the following code attempt to go to when clicked: <a [routerLink]=\"['/yada', 'blah', 99]\"...",
+      "answer": "<your host>/yada/blah/99",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "What does [routerLinkActiveOptions]=\"{exact:\ntrue}\" do?",
+      "answer": "Tells the routerLinkActive directive to only apply the specified class or classes if the routerLink is an exact match",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "You're importing an instance of ActivatedRoute into your component. Whats the difference between activatedRoute.snapshot and activatedRoute.params",
+      "answer": "snapshot returns the current route data, params is an observable that updates when the route updates",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "If you add [queryParams]=\"{something: 1}\" to an anchor tag which already contains a routerLink path to \"/yada\" what would the url be?",
+      "answer": "<your host>/yada?something=1",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "If you add [fragment]=\"something\" to an anchor tag which already contains a routerLink path to \"/yada\" what would the url be?",
+      "answer": "<your host>/yada#something",
+      "categories": [
+        "angular, routing"
+      ]
+    }, {
+      "question": "Is EventEmitter an extension of an RxJS subject?",
+      "answer": "Yes",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Angular Elements compiles Angular components into something else - what is it?",
+      "answer": "Web components",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "",
+      "answer": "Web components",
       "categories": [
         "angular"
       ]
