@@ -309,8 +309,164 @@
         "angular"
       ]
     }, {
-      "question": "",
-      "answer": "Web components",
+      "question": "What is the difference between [routerLink] and routerLink",
+      "answer": "When you use brackets, it means you're passing a bindable property of your component. Without brackets takes it outside the realm of angular so you're passing a primitive",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "[ngSwitch] can have 2 possible children - what are they?",
+      "answer": "*ngSwitchCase and *ngSwitchDefault",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What are the built in pipes?",
+      "answer": "async, number, i18nSelect, i18nPlural, currency, date, json, slice, lowercase, uppercase, titlecase, async, percent, keyvalue",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Can the safe-navigation be used with a pipe eg would the following work: (myObj | async)?.length?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Angular 8 introduced 'differential loading' - what is this?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What does srcset do",
+      "answer": "",
+      "categories": [
+        "html"
+      ]
+    }, {
+      "question": "An Angular module includes a declarations array. The allowable classes are what described as declarable classes. Which types of classes are declarable?",
+      "answer": "components, directives and pipes",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Can an Angular module export declarable classes (Components, Directives and Pipes) from a module it has imported",
+      "answer": "Yes",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Where would you find entryComponents and what are they?",
+      "answer": "To contrast the two types of components, there are components which are included in the template, which are declarative. Additionally, there are components which you load imperatively; that is, entry components",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "NgModule allows us to specify which declarable classes (Components, Directives and Pipes) are allowed for that module. Does Component allow the same?",
+      "answer": "No",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is the difference between a pure Pipe and an Impure Pipe?",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What does useHash do here? RouterModule.forRoot(appRoutes, {useHash: true})",
+      "answer": "It uses the HashLocationStrategy instead of the default PathLocationStrategy. This means that a url that by default might look like: localhost:4200/blah instead shows as localhost:4200/#/blah",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Name 3 lifecycle hooks",
+      "answer": "Pick 3 of: ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, ngOnDestroy",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "Can directives implements lifecycle hooks (ngOnInit, ngOnChanges etc)?",
+      "answer": "Yes",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "List 3 angular decorators",
+      "answer": "Pick 3 of: @NgModule",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Component",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Injectable",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Directive",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Pipe",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Input",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @Output",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @HostBinding",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @HostListener",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @ContentChild",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @ContentChildren",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @ViewChild",
+      "answer": "",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is: @ViewChildren",
+      "answer": "",
       "categories": [
         "angular"
       ]

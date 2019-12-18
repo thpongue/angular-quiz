@@ -20,3 +20,4 @@
     [] dockerise
     [] make into PWA
     [] pwaquiz.com
+    - use the Red A background from Angular logo to form the Q of quiz
