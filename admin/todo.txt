@@ -20,4 +20,5 @@
     [] dockerise
     [] make into PWA
     [] pwaquiz.com
+    [] can I incorporate spaced repetition?
     - use the Red A background from Angular logo to form the Q of quiz
