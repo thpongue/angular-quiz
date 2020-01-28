@@ -204,13 +204,7 @@
       "categories": [
         "angular"
       ]
-    }, {
-      "question": "If you add the @Injectable() annotation to a service does it mean that you can inject the service into another, or that another service can be injected into it",
-      "answer": "Another service can be injected into it - note that the term i 'injectable' is misleading",
-      "example": "",
-      "categories": [
-        "angular"
-      ]
+
     }, {
       "question": "If you find a Service with the @Injectable() annotation and update it with the following parameter: {providedIn: 'root'} what does that do?",
       "answer": "It is an alternative to adding the service to the providers in the root module. Detractors point out that it harms the cohesion of your software as providers can be scattered throughout the app. However, if only used in a lazy-loaded module it will be tree shaken out of the main module. Also if it isn't used at all this format allows the service to be tree shaken out of the build",
@@ -470,6 +464,62 @@
       "categories": [
         "angular"
       ]
+    }, {
+      "question": "Whats the difference between viewProviders and providers",
+      "answer": "The viewProviders property allows us to make providers available to the component's view only, whereas the providers property makes a provider available to its content children and view children.",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What does this CLI command do: ng g s heroes/hero",
+      "answer": "ng (use cli) g (generate) s (service) heroes/ (create heroes folder) hero (create hero.service.ts service with the @Injectable({\n  providedIn: 'root'\n}) decorator)",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "If you use the @Injectable decorator with the ‘providedIn’ option, do you need to add it to the providers array of the module?",
+      "answer": "No",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What does ng-content do?",
+      "answer": "It allows you to pass specify where in your template to output html added as a child of your component",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is string interpolation",
+      "answer": "This is often referred to as moustache syntax. It allows us to reference component properties in our template",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is Ahead Of Time (AOT) compilation",
+      "answer": "Angular is essentially a compiler. Much of the work involves taking a template and its css and turning it into JavaScript which can then be run on the client. AOT does this when you generate your prod build, JIT downloads the code, templates and css then does this on the client machine",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "What is ng-container",
+      "answer": "this is a grouping element which doesn't actually get added to the DOM. Its not a directive or component - just a special case which angular looks for in the template",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "By convention what can do we use for directives",
+      "answer": "Camel case",
+      "categories": [
+        "angular"
+      ]
+    }, {
+      "question": "If you create a #reference property on a component with a play method. Does the following code work in a sibling component (click)='#reference.play()'",
+      "answer": "Yes",
+      "categories": [
+        "angular"
+      ]
     }
+
+
   ]
 }
